@@ -5,7 +5,7 @@ This tool is designed to help guitarists explore scales, map out fretboards acro
 ## Live Application
 To make this tool as accessible as possible, it is hosted online via Streamlit Community Cloud. You can access and interact with the application directly from your browser without needing to download or run any code locally:
 
-**[Insert your Streamlit App URL here]*
+*https://guitar-music-theory-chord-visualizer-h4zgzqyisvfgs98lapfwjb.streamlit.app/*
 
 ## Core Features
 - **Dynamic Fretboard Mapping:** Visualizes scales and intervals across the entire fretboard, adapting to the user's chosen root note and scale type.
