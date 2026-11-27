@@ -1,24 +1,25 @@
 # Guitar Music Theory & Chord Visualizer
 
-This tool is designed to help guitarists explore scales, map out fretboards across various tunings, and dynamically generate playable chord voicings. 
+This tool helps guitarists explore scales, map out the fretboard across different tunings and capo positions, and find playable chord voicings.
 
 ## Live Application
-To make this tool as accessible as possible, it is hosted online via Streamlit Community Cloud. You can access and interact with the application directly from your browser without needing to download or run any code locally:
+The app is hosted online on Streamlit Community Cloud, so you can use it directly in your browser without downloading or running any code locally:
 
-*https://guitar-music-theory-chord-visualizer-h4zgzqyisvfgs98lapfwjb.streamlit.app/*
+[Open Guitar Music Theory & Chord Visualizer](https://guitar-music-theory-chord-visualizer-h4zgzqyisvfgs98lapfwjb.streamlit.app/)
 
 ## Core Features
-- **Dynamic Fretboard Mapping:** Visualizes scales and intervals across the entire fretboard, adapting to the user's chosen root note and scale type.
-- **Custom and Alternate Tunings:** Supports standard and alternate tunings (such as Drop D, DADGAD, Open G), as well as entirely custom string configurations.
-- **Algorithmic Chord Voicing:** Utilizes Python's Itertools to dynamically calculate physically playable, ergonomic chord shapes based on string intervals and standard human finger stretches.
-- **CAGED System Explorer:** Maps traditional CAGED chord shapes automatically for standard and compatible tunings to help users bridge the gap between theory and practical playing.
-- **Multilingual Support:** The interface is fully accessible in English, Chinese (中文), and French (Français).
+- **Full Fretboard Mapping:** Displays full scales across the fretboard in either Note or Interval mode, with accurate diatonic spelling and highlighting for the selected chord degree.
+- **Tunings and Capo Support:** Includes standard and alternate tunings (such as Drop D, DADGAD, and Open G), custom string configurations, and capo transposition up to fret 12.
+- **Diatonic Chords and Progressions:** Builds triads and 7th chords for 7-note scales, includes a practical V7 option in Major keys, and lets you view common progressions (Pop, Classic Rock, and Jazz/R&B).
+- **Playable Chord Voicings:** Uses standard open and barre shapes for standard-interval tunings, and falls back to a Python `itertools` search to calculate playable voicings for alternate and custom tunings.
+- **CAGED System Explorer:** Maps CAGED chord shapes across standard and compatible tunings (adjusted for capo position) for triads and 7th chords.
+- **Multilingual Support:** The interface is available in English, Chinese (中文), and French (Français).
 
 ## Running the Application Locally
-If you wish to run this tool on your own machine, please follow these steps:
-1. Ensure you have Python installed.
-2. Install the necessary dependencies by running: `pip install -r requirements.txt`
-3. Launch the application with the command: `streamlit run app.py`
+If you want to run this tool on your own computer, follow these steps:
+1. Make sure you have Python installed.
+2. Install the required packages by running: `pip install -r requirements.txt`
+3. Start the app with the command: `streamlit run app.py`
 
 ## Disclaimer on Music Theory Accuracy
-Please note that the codebase and the underlying logic for this application were generated entirely by AI. While the tool has been refined to serve as a reliable visualizer, the music theory frameworks within have not been independently verified by professional musicians or theorists. I encourage you to use this app as a supplementary learning aid, but please proceed at your own risk, keeping in mind the possibility of encountering theoretical inaccuracies.
+Please note that the code and underlying logic for this application were generated with AI. While the tool has been reviewed and updated to work as a reliable visualizer, the music theory logic has not been independently checked by professional musicians or music theorists. You are welcome to use this app as a learning aid, while keeping in mind that minor theoretical inaccuracies may still appear.
